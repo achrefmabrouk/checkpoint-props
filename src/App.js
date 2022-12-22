@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Fullname from './components/Fullname.js'
+import Address from './components/Address.js'
+import Photoprofile from './components/Photoprofile.js'
+import './app.css'
+
 
 function App() {
   return (
+    <form style= {{textAlign:'center', width:'300px', margin:'0 auto', marginTop:'150px', gap:'100px' }}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Photoprofile>
+        <img src='./photo1.jpg' alt ='pho' width='300px'  ></img>
+      </Photoprofile>
+      <Fullname name = {'ACHREF MABROUK'} />
+      <Address address={'BARDO , TUNIS'} />
     </div>
+    </form>
   );
 }
 
